@@ -7,9 +7,38 @@
     box-sizing: border-box;
 }
 
+:root {
+    --active-colour: #FFC107;
+    --inactive-colour: #0D6EFD;
+    --header-colour: #F8F9FA;
+    --font-colour: #212529;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--font-colour);
+
+    h2 {
+        font-weight: 500;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+}
+
 /* #endregion common */
 
-/* #region app */
+/* #region header */
+header {
+    background-color: var(--header-colour);
+    padding: 1rem;
+
+    h1 {
+        font-weight: 500;
+    }
+}
+/* #endregion header */
+
+/* #region main */
 .container {
     margin: auto;
     padding: 2rem;
@@ -22,7 +51,16 @@
         .tabs-item {
 
             h2 {
-                background-color: aqua;
+                background-color: var(--inactive-colour);
+                color: white;
+            }
+        }
+
+        .active {
+
+            h2 {
+                background-color: var(--active-colour);
+                color: var(--font-colour)
             }
         }
 
@@ -35,4 +73,4 @@
     }
 }
 
-/* #endregion app */
+/* #endregion main */
