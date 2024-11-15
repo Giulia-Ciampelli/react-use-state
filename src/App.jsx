@@ -11,8 +11,11 @@ function App() {
   // funzione per le tabs
   function contentShow(e) {
     const newActive = e.target.getAttribute('data-index');
-
     setActive(newActive);
+    
+    if(active == newActive) {
+      setActive(null);
+    }
   }
 
   // markup
