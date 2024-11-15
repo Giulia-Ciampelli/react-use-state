@@ -15,10 +15,10 @@ function App() {
         {languages.map((language, index) => (
           <div className="tabs-item">
             <h2>
-              nome tab
+              {language.title}
             </h2>
             <div>
-              content dinamico
+              {language.description}
             </div>
           </div>
         ))}

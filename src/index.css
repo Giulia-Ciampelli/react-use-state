@@ -1,1 +1,12 @@
 /* stile globale */
+
+/* #region common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* #endregion common */
+
+/* #region app */
+/* #endregion app */
