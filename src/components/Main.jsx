@@ -1,6 +1,7 @@
 // importazioni
 import { useState } from 'react';
 import languages from '../data/languages.js';
+import ContentCard from './ContentCard/ContentCard.jsx';
 
 export default function Main() {
 
@@ -26,14 +27,6 @@ export default function Main() {
                         <h2 className='tabs-title' onClick={contentShow} data-index={index}>
                             {language.title}
                         </h2>
-                        <div className='description'>
-                            <h2>
-                                {language.title}
-                            </h2>
-                            <p>
-                                {language.description}
-                            </p>
-                        </div>
                     </div>
                 ))}
             </div>
