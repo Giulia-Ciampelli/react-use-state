@@ -10,7 +10,7 @@ function App() {
 
   // funzione per le tabs
   function contentShow(e) {
-    const newActive = e.target.getAttribute('index');
+    const newActive = e.target.getAttribute('data-index');
 
     setActive(newActive);
   }
@@ -20,7 +20,7 @@ function App() {
     <>
       <div className="tabs">
         {languages.map((language, index) => (
-          <div className="tabs-item" key={index}>
+          <div className={active == index ? 'tabs-item active' : 'tabs-item hide'} key={language.id}>
             <h2 onClick={contentShow} data-index={index}>
               {language.title}
             </h2>
