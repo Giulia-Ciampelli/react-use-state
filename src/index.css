@@ -9,4 +9,15 @@
 /* #endregion common */
 
 /* #region app */
+.tabs {
+    display: flex;
+    gap: 1rem;
+
+    .tabs-item {
+
+        div {
+            display: none;
+        }
+    }
+}
 /* #endregion app */
