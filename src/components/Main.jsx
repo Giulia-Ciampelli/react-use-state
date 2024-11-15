@@ -23,11 +23,16 @@ export default function Main() {
             <div className="tabs">
                 {languages.map((language, index) => (
                     <div className={active == index ? 'tabs-item active' : 'tabs-item hide'} key={language.id}>
-                        <h2 onClick={contentShow} data-index={index}>
+                        <h2 className='tabs-title' onClick={contentShow} data-index={index}>
                             {language.title}
                         </h2>
-                        <div>
-                            {language.description}
+                        <div className='description'>
+                            <h2>
+                                {language.title}
+                            </h2>
+                            <p>
+                                {language.description}
+                            </p>
                         </div>
                     </div>
                 ))}

@@ -20,8 +20,6 @@ body {
 
     h2 {
         font-weight: 500;
-        padding: 1rem;
-        border-radius: .5rem;
     }
 }
 
@@ -34,6 +32,7 @@ header {
 
     h1 {
         font-weight: 500;
+        font-size: 40pt;
     }
 }
 /* #endregion header */
@@ -50,26 +49,46 @@ header {
 
         .tabs-item {
 
-            h2 {
+            .tabs-title {
+                padding: 1rem;
+                border-radius: .5rem;
+                max-width: fit-content;
                 background-color: var(--inactive-colour);
                 color: white;
             }
-        }
 
-        .active {
+            .description {
+                margin: 2rem 0;
+                padding: 1rem;
+                border: solid 1px gray;
+                border-radius: .5rem;
 
-            h2 {
-                background-color: var(--active-colour);
-                color: var(--font-colour)
+                h2 {
+                    margin-bottom: .5rem;
+                }
+
+                p {
+                    font-size: large;
+                }
             }
         }
 
-        .hide {
+        /* #region classi dinamiche */
+        .active {
 
+            .tabs-title {
+                background-color: var(--active-colour);
+                color: var(--font-colour);
+            }
+        }
+        
+        .hide {
+             
             div {
                 display: none;
             }
         }
+        /* #endregion classi dinamiche */
     }
 }
 
