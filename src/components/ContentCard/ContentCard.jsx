@@ -1,6 +1,3 @@
-// importazioni
-import languages from "../../data/languages.js";
-
 export default function ContentCard({ language }) {
     return (
         <div className='description'>
