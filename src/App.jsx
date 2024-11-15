@@ -12,8 +12,8 @@ function App() {
   function contentShow(e) {
     const newActive = e.target.getAttribute('data-index');
     setActive(newActive);
-    
-    if(active == newActive) {
+
+    if (active == newActive) {
       setActive(null);
     }
   }
@@ -21,17 +21,19 @@ function App() {
   // markup
   return (
     <>
-      <div className="tabs">
-        {languages.map((language, index) => (
-          <div className={active == index ? 'tabs-item active' : 'tabs-item hide'} key={language.id}>
-            <h2 onClick={contentShow} data-index={index}>
-              {language.title}
-            </h2>
-            <div>
-              {language.description}
+      <div className="container">
+        <div className="tabs">
+          {languages.map((language, index) => (
+            <div className={active == index ? 'tabs-item active' : 'tabs-item hide'} key={language.id}>
+              <h2 onClick={contentShow} data-index={index}>
+                {language.title}
+              </h2>
+              <div>
+                {language.description}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   )

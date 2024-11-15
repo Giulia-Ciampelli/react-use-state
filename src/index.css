@@ -6,18 +6,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* #endregion common */
 
 /* #region app */
-.tabs {
-    display: flex;
-    gap: 1rem;
+.container {
+    margin: auto;
+    padding: 2rem;
 
-    .hide {
+    .tabs {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
 
-        div {
-            display: none;
+        .tabs-item {
+
+            h2 {
+                background-color: aqua;
+            }
+        }
+
+        .hide {
+
+            div {
+                display: none;
+            }
         }
     }
 }
+
 /* #endregion app */
