@@ -1,7 +1,7 @@
 // importazioni
 import { useState } from 'react'
 import './App.css'
-import languages from './assets/languages';
+import languages from './data/languages';
 
 function App() {
 
