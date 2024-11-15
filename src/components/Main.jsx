@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import languages from '../data/languages.js';
 import ContentCard from './ContentCard/ContentCard.jsx';
+import EmptyCard from './ContentCard/EmptyCard.jsx';
 
 export default function Main() {
 
@@ -31,7 +32,7 @@ export default function Main() {
                 ))}
 
                 {/* card condizionale */}
-                {active !== null && <ContentCard language={languages[active]}/>}
+                {active !== null ? (<ContentCard language={languages[active]}/>) : (<EmptyCard />)}
             </div>
         </div>
     )
