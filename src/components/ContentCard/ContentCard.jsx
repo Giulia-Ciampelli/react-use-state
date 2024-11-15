@@ -1,17 +1,15 @@
-import languages from "../../data/languages"
+// importazioni
+import languages from "../../data/languages.js";
 
 export default function ContentCard({ language }) {
     return (
-        <>
-            {languages.map()}
-            <div className='description'>
-                <h2>
-                    {language.title}
-                </h2>
-                <p>
-                    {language.description}
-                </p>
-            </div>
-        </>
+        <div className='description'>
+            <h2>
+                {language.title}
+            </h2>
+            <p>
+                {language.description}
+            </p>
+        </div>
     )
 }

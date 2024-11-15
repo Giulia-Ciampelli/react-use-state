@@ -29,6 +29,9 @@ export default function Main() {
                         </h2>
                     </div>
                 ))}
+
+                {/* card condizionale */}
+                {active !== null && <ContentCard language={languages[active]}/>}
             </div>
         </div>
     )

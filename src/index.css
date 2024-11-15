@@ -48,7 +48,6 @@ header {
         gap: 1rem;
 
         .tabs-item {
-            position: relative;
 
             .tabs-title {
                 padding: 1rem;
@@ -59,10 +58,6 @@ header {
             }
 
             .description {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 900%;
                 margin: 2rem 0;
                 padding: 1rem;
                 border: solid 1px gray;
